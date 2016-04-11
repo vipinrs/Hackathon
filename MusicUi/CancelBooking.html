@@ -1,0 +1,55 @@
+<html>
+<head>
+<script>
+function validate14()
+{
+if(document.f14.calender.value=="")
+{
+alert("please provide the date");
+document.f14.calender.focus();
+return false;
+}
+}
+</script>
+    <link rel="stylesheet" href="pure-min.css" />
+ <link rel="stylesheet" href="link.css"/>
+<div id="container">
+
+<div id="header" style="background-color:lightgreen;float:center">
+<h1 style="margin-bottom:0;">MUSIC STUDIO</h1>
+     <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul id="std-menu-items">
+        <li><a href="Logoff1.php">Logoff</a></li>
+        </ul>
+  </div>    </div>
+    </div>
+	
+
+<div id="menu" style="background-color:white;float:left;height:80%">
+ <div class="pure-menu pure-menu-open">
+    <a class="pure-menu-heading">Admin Options</a>
+        <ul>
+		
+		
+		
+<li><a href="Booking.php">View Bookings</a></li>       
+<li><a href="CancelBooking.html">Cancel Bookings</a></li>
+<li><a href="User feedback.html">User feedback</a></li>
+    </ul>
+        </div></div>
+		</head>
+		<body>
+		<form name="f14" class="pure-form pure-form-stacked" action="cancelbooking.php" method="post" onsubmit="return validate14();">
+		<pre><font color="black"><center>Please enter the date tocancle the booking of room...!!</center></font></pre>
+    <center>
+		<lable for="date">select a date:</lable><input name="calender" type="date" value="4-10-2016"><br>
+		<button type="submit" class="pure-button pure-button-primary">Cancel</button>
+        <button type="reset" class="pure-button pure-button-primary">reset</button>
+</body>
+<center>
+<footer style="position:absolute;bottom:0;width:100%">
+<p>Copy rights @all form 2016-2019 John pvt.ltd</p></footer>
+</center>
+
+
+</html>

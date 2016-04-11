@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>change password</title>
+	<script type="text/javascript">
+function validate8()
+{
+if(document.f9.username.value=="")
+        
+{
+           
+ alert("please provide the correct username");
+           
+ document.f9.username.focus();
+            
+return false;
+        
+}
+if(document.f9.name.value==""||!f9.name.value.match(/^[A-Za-z]+$/))
+{
+alert("please provide the correct name");
+document.f9.name.focus();
+return false;
+}
+if(document.f9.emailid.value==""||document.f9.emailid.value=="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*.\w+(\.\w{2,3})+$/")
+{
+alert("please provide the correct emailid");
+document.f9.emailid.focus();
+return false;
+}
+if(document.f9.calender.value=="")
+{
+alert("please provide the date");
+document.f9.calender.focus();
+return false;
+}
+}
+</script>
+    <link rel="stylesheet" href="pure-min.css" />
+    <link rel="stylesheet" href="link.css"/>
+   <div id="container">     
+            <div id="header" style="background-color:lightgreen;float:center">
+<h1 style="margin-bottom:0;">MUSIC STUDIO</h1>
+            <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul id="std-menu-items">
+		<li><a href="Logoff.php">Logoff</a></li>
+        </ul>
+  </div>  </div>   </div> 
+    </head>
+      <div id="menu" style="background-color:white;float:left;height:80%">
+ <div class="pure-menu pure-menu-open">
+    <a class="pure-menu-heading">User Options</a>
+        <ul>
+
+
+            
+<li><a href="Book.html">Book room</a></li>
+<li><a href="Changepassword.html">Changepassword</a></li>
+<li><a href="Give feedback.html"> Give Feedback</a></li>
+    </ul>
+        </div></div>
+<body>
+    
+    <form name="f9" class="pure-form pure-form-stacked" action="book.php" method="post" onsubmit="return validate8();">
+	<pre><font color="black"><center>below is the booking for room1...!!</center></font></pre>
+    <center>
+	<input name="username" type="text" placeholder="Username" maxlength="20"><br>
+	<input name="name" type="text" placeholder="name" maxlength="10"><br>
+	<input name="emailid" type="email" placeholder="emailid" maxlength="30"><br>
+	<lable for="date">select a date:</lable><input name="calender" type="date" value="4-10-2016"><br>
+	
+  
+        
+   
+        
+        <button type="submit" class="pure-button pure-button-primary">Book</button>
+        <button type="reset" class="pure-button pure-button-primary">reset</button>
+   </center></form>
+    </body>
+<center>
+        <footer style="position:absolute;bottom:0;width:100%"><p>Copy rights @all form 2016-2019 John pvt.ltd</p></footer>
+    </center>
+</html>
